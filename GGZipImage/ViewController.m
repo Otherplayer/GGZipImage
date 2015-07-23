@@ -19,12 +19,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
+    ///对比视图1
     UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)/2)];
     [self.view addSubview:imageView1];
     [imageView1 setClipsToBounds:YES];
     [imageView1 setContentMode:UIViewContentModeScaleAspectFill];
     
+    ///对比视图2
     UIImageView *imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.bounds) / 2, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)/2)];
     [self.view addSubview:imageView2];
     [imageView2 setClipsToBounds:YES];
@@ -33,6 +34,7 @@
     
     
     
+    ////新视图
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds))];
     [self.view addSubview:self.imageView];
     [self.imageView setClipsToBounds:YES];
@@ -42,6 +44,38 @@
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showCamera:)];
     [self.imageView setUserInteractionEnabled:YES];
     [self.imageView addGestureRecognizer:tapGesture];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //    NSString *imageName = @"HYQ.jpg";
+    //    NSString *imageName = @"girl.jpg";
+    //    NSString *imageName = @"7.jpg";//287kb
+    NSString *imageName = @"guide.png";//501kb
+    //    NSString *imageName = @"lol.jpg";//1.3M
+    UIImage *image = [UIImage imageNamed:imageName];
+    UIImage *newImage = [[GGZipImage sharedImage] zipImageWithImage:image];
+    
+    [imageView1 setImage:image];   //原图
+    [imageView2 setImage:newImage];//结果图
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 //    ///图片压缩
 //    
 //    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"girl" ofType:@"jpg"];
@@ -95,20 +129,6 @@
 //            break;
 //        }
 //    }
-    
-    
-    
-//    NSString *imageName = @"HYQ.jpg";
-//    NSString *imageName = @"girl.jpg";
-//    NSString *imageName = @"7.jpg";//287kb
-    NSString *imageName = @"guide.png";//501kb
-//    NSString *imageName = @"lol.jpg";//1.3M
-    UIImage *image = [UIImage imageNamed:imageName];
-    UIImage *newImage = [[GGZipImage sharedImage] zipImageWithImage:image];
-    
-    [imageView1 setImage:image];   //原图
-    [imageView2 setImage:newImage];//结果图
-    
 
     
 }

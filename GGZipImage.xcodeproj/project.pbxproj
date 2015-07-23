@@ -15,6 +15,13 @@
 		637558DA1B60A19C00BBC19A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637558D81B60A19C00BBC19A /* LaunchScreen.storyboard */; };
 		637558E51B60A19C00BBC19A /* GGZipImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637558E41B60A19C00BBC19A /* GGZipImageTests.m */; };
 		637558F01B60A19C00BBC19A /* GGZipImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 637558EF1B60A19C00BBC19A /* GGZipImageUITests.m */; };
+		637558FE1B60A1D600BBC19A /* HYQ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637558FD1B60A1D600BBC19A /* HYQ.jpg */; };
+		637559001B60B69800BBC19A /* girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637558FF1B60B69800BBC19A /* girl.jpg */; };
+		637559031B60B6DC00BBC19A /* GGZipImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 637559021B60B6DC00BBC19A /* GGZipImage.m */; };
+		637559061B60BEF400BBC19A /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637559051B60BEF400BBC19A /* 7.jpg */; };
+		637559081B60C35F00BBC19A /* guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 637559071B60C35F00BBC19A /* guide.png */; };
+		6375590B1B60C59700BBC19A /* GGCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 6375590A1B60C59700BBC19A /* GGCamera.m */; };
+		6375590D1B60CAEB00BBC19A /* lol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375590C1B60CAEB00BBC19A /* lol.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,15 @@
 		637558EB1B60A19C00BBC19A /* GGZipImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGZipImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		637558EF1B60A19C00BBC19A /* GGZipImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGZipImageUITests.m; sourceTree = "<group>"; };
 		637558F11B60A19C00BBC19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637558FD1B60A1D600BBC19A /* HYQ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HYQ.jpg; sourceTree = "<group>"; };
+		637558FF1B60B69800BBC19A /* girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpg; sourceTree = "<group>"; };
+		637559011B60B6DC00BBC19A /* GGZipImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGZipImage.h; sourceTree = "<group>"; };
+		637559021B60B6DC00BBC19A /* GGZipImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGZipImage.m; sourceTree = "<group>"; };
+		637559051B60BEF400BBC19A /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		637559071B60C35F00BBC19A /* guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide.png; sourceTree = "<group>"; };
+		637559091B60C59700BBC19A /* GGCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCamera.h; sourceTree = "<group>"; };
+		6375590A1B60C59700BBC19A /* GGCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCamera.m; sourceTree = "<group>"; };
+		6375590C1B60CAEB00BBC19A /* lol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lol.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,7 @@
 		637558C91B60A19C00BBC19A /* GGZipImage */ = {
 			isa = PBXGroup;
 			children = (
+				637559041B60B6E300BBC19A /* Class */,
 				637558CD1B60A19C00BBC19A /* AppDelegate.h */,
 				637558CE1B60A19C00BBC19A /* AppDelegate.m */,
 				637558D01B60A19C00BBC19A /* ViewController.h */,
@@ -117,6 +134,11 @@
 		637558CA1B60A19C00BBC19A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6375590C1B60CAEB00BBC19A /* lol.jpg */,
+				637559071B60C35F00BBC19A /* guide.png */,
+				637558FD1B60A1D600BBC19A /* HYQ.jpg */,
+				637558FF1B60B69800BBC19A /* girl.jpg */,
+				637559051B60BEF400BBC19A /* 7.jpg */,
 				637558CB1B60A19C00BBC19A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +160,17 @@
 				637558F11B60A19C00BBC19A /* Info.plist */,
 			);
 			path = GGZipImageUITests;
+			sourceTree = "<group>";
+		};
+		637559041B60B6E300BBC19A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				637559011B60B6DC00BBC19A /* GGZipImage.h */,
+				637559021B60B6DC00BBC19A /* GGZipImage.m */,
+				637559091B60C59700BBC19A /* GGCamera.h */,
+				6375590A1B60C59700BBC19A /* GGCamera.m */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +276,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637558FE1B60A1D600BBC19A /* HYQ.jpg in Resources */,
 				637558DA1B60A19C00BBC19A /* LaunchScreen.storyboard in Resources */,
 				637558D71B60A19C00BBC19A /* Assets.xcassets in Resources */,
+				637559061B60BEF400BBC19A /* 7.jpg in Resources */,
 				637558D51B60A19C00BBC19A /* Main.storyboard in Resources */,
+				6375590D1B60CAEB00BBC19A /* lol.jpg in Resources */,
+				637559081B60C35F00BBC19A /* guide.png in Resources */,
+				637559001B60B69800BBC19A /* girl.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +311,8 @@
 				637558D21B60A19C00BBC19A /* ViewController.m in Sources */,
 				637558CF1B60A19C00BBC19A /* AppDelegate.m in Sources */,
 				637558CC1B60A19C00BBC19A /* main.m in Sources */,
+				637559031B60B6DC00BBC19A /* GGZipImage.m in Sources */,
+				6375590B1B60C59700BBC19A /* GGCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
